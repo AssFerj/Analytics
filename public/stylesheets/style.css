@@ -8,9 +8,17 @@ body {
   flex-flow: column;
   justify-content: center;
   font: 14px "Roboto", Helvetica, Arial, sans-serif;
-}
-.hero{
   width: 100vw;
+}
+root{
+  --prime-color: #00008b;
+  --second-color: #EF2A82;
+  --terc-color: #0088F0;
+  --quad-color: #8794BA;
+  --quint-color: #FFFFFF;
+}
+header{
+  width: 100%;
   height: auto;
   padding: 2rem;
   background-image: url(/images/background-top.svg);
@@ -23,12 +31,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-header{
-  max-width: 1200px;
+.navigation{
+  width: 100%;
   height: 4rem;
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 nav > ul{
@@ -46,8 +54,65 @@ nav > ul > li:hover{
   color: #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
 
-  transition: all 1s;
+  transition: all .8s;
 }
+.log a{
+  margin: 0 .5rem;
+  padding: .8rem 3rem;
+  text-decoration: none;
+  color: #8794BA;
+  border-radius: 2rem;
+}
+.sign-in:hover{
+  color: var(--prime-color);
+  background-color: #8794BA;
+
+  transition: all .8s;
+}
+.sign-up{
+  display: none;
+  border: #8794BA;
+  border: 1PX solid #8794BA;
+}
+.sign-up:hover{
+  color: var(--prime-color);
+  background-color: #8794BA;
+
+  transition: all .8s;
+}
+
+/*
+
+.logo{
+  width: 10%;
+}
+nav{
+  width: 50%;
+}
+
+.hero{
+  display: flex;
+  justify-content: space-around;
+}
+.primary-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text{
+  width: 40%;
+}
+.img{
+  margin-right: -2rem;
+}
+h1{
+  color: #FFFFFF;
+  font-size: 50px;
+}
+*/
+
+
+
 
 
 
